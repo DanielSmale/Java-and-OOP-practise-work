@@ -9,21 +9,22 @@ package example.pkg1;
  *
  * @author dsmale
  */
-public class Example1 {
+public class MyHeight {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int day = 22;
+        double cm = 180;
+        double totalInches;
+        double inches;
+        double feet;
         
-        
-        System.out.println("Hello world");
-        System.out.println("The date today is " + day);
-        System.out.println(true);
-        
-        System.exit(0);
-        
+        totalInches = cm / 2.54;
+        feet = totalInches / 12;
+       inches = totalInches % 12;
+       
+       System.out.println(cm + " cm is "+ feet + " foot and " + inches + " inches");
     }
     
 }
