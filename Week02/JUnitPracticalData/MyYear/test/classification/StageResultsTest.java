@@ -91,12 +91,38 @@ public class StageResultsTest {
 
     @Test
     public void testIsComplete() {
-        fail("Test not yet implemented");
+
+        System.out.println("Testing is complete");
+        
+        //Check that the empty object is 'not complete'
+        assertFalse("empty object", empty.isComplete());
+        
+        //Check that the halfFull object is 'not complete'
+        assertFalse("halfFull object", halfFull.isComplete());
+        
+        //Check the full is complete
+        assertTrue("Full object", full.isComplete());
+        
     }
 
     @Test
     public void testResetValues() {
-        fail("Test not yet implemented");
+        
+        System.out.println("Testing resetValues");
+        
+        // Set the state of them 'full' object to zeroes 
+        full.resetValues();
+        
+        // Set expected results
+        int expIntResult =0;
+        double expDoubleResult =0.0;
+        
+        // Now check each attribute to test that the reset has worked
+        assertEquals("credits", expIntResult, full.getTotalCredits());
+        assertEquals("total", expDoubleResult, full.getTotalMarks(), 0.0);
+        
+        // Put the 'full' object back to its original state
+        full.addModuleMark(120, 50.0);
     }
 
 }
