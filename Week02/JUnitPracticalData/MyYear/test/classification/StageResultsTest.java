@@ -76,7 +76,19 @@ public class StageResultsTest {
 
     @Test
     public void testAddModuleMark() {
-        fail("Test not yet implemented");
+        empty.addModuleMark(10, 70);
+        assertEquals("10 credit module", 10 , empty.getTotalCredits());
+        assertEquals("Got 70 marks", 70, empty.getTotalMarks(),0.0);
+        
+        empty.addModuleMark(20, 40);
+        assertEquals("20 credit module", 30, empty.getTotalCredits());
+        assertEquals("Got 40 marks", 210, empty.getTotalMarks(),0.0);
+
+        empty.addModuleMark(40, 60);
+        assertEquals("40 credit module", 70, empty.getTotalCredits());
+        assertEquals("Got 60 marks", 280, empty.getTotalMarks(),0.0);
+        
+        empty.resetValues();
     }
 
     @Test
