@@ -11,10 +11,10 @@ package stocktracker.stockdatamodel;
  */
 public class StockItem {
 
-    private String name = "UNKNOWN";
-    private Integer quanityInStock = 0;
-    private Double sellingPrice = 1000.0;
-    private Double costPrice = 1000.0;
+    protected String name = "UNKNOWN";
+    protected Integer quanityInStock = 0;
+    protected Double sellingPrice = 1000.0;
+    protected Double costPrice = 1000.0;
 
     /* Rules
     Name: This must exist and cannot be an empty string
