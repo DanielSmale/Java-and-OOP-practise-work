@@ -10,20 +10,24 @@ package unidemo;
  * @author dsmale
  */
 public class Admin {
-    
-    public static void assignCourse(UniPeople personToJoin, Course courseToJoin){
+
+    public static void assignCourse(UniPeople personToJoin, Course courseToJoin) {
         personToJoin.setCourse(courseToJoin);
-                
-        
+
     }
-    
-    public static void getDetails(Lecturer lecturer){
-        
-        System.out.println("Name = " + lecturer.getName() + ", Id = " + lecturer.getId() + ", Course = " + lecturer.getCourse());
-        
+
+    public static void getDetails(Lecturer lecturer) {
+
+        if (lecturer.getCourse() != null) {
+            System.out.println("Name = " + lecturer.getName() + ", Id = " + lecturer.getId() + ", Course = " + lecturer.getCourse());
+        }
+        System.out.println("Name = " + lecturer.getName() + ", Id = " + lecturer.getId());
     }
-    
-    public static void getDetails(Student student){
-        System.out.println("Name = " + student.getName() + ", Id = " + student.getId() + ", Course = " + student.getCourse());
+
+    public static void getDetails(Student student) {
+        if (student.getCourse() != null) {
+            System.out.println("Name = " + student.getName() + ", Id = " + student.getId() + ", Course = " + student.getCourse());
+        }
+        System.out.println("Name = " + student.getName() + ", Id = " + student.getId());
     }
 }
