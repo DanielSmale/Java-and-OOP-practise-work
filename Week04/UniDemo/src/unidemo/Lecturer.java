@@ -13,7 +13,7 @@ public class Lecturer extends UniPeople implements ITeach{
 
  @Override
     public void setCoursework(String courseworkName) {
-        setCoursework(courseworkName);
+
         
     }
     

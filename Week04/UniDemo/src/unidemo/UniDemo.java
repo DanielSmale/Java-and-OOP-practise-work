@@ -28,6 +28,22 @@ public class UniDemo {
         Admin.assignCourse(student, course);
         Admin.assignCourse(lecturer, course);
         
+        //make the lecturer teach and the student attend
+        lecturer.teach();
+        student.attendClass();
+        
+        //• make the student attempt the coursework
+        student.doCoursework();
+        
+        //• set the coursework
+        lecturer.setCoursework("Java part 1");
+        
+      //  • make the student attempt the coursework again
+      student.doCoursework();
+      
+      //• print out the details of the lecturer
+     Admin.getDetails(lecturer);
+
         
     }
     
