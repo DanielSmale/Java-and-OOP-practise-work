@@ -5,6 +5,7 @@
  */
 
 package observer.practice;
+
 /**
  *
  * @author Student
@@ -17,10 +18,11 @@ public class ObserverPractice {
     public static void main(String[] args) {
 
      Newspaper bugle = new Newspaper();
- Reporter peter = new Reporter();
+ Reporter peter = new Reporter(bugle);
 
-bugle.RegisterObserver(peter);
+bugle.registerObserver(peter);
 
+peter.
     }
 
 }

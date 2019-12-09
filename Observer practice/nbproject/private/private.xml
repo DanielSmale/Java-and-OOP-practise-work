@@ -3,11 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Student/Documents/NetBeansProjects/Observer%20practice/src/Reporter.java</file>
-            <file>file:/C:/Users/Student/Documents/NetBeansProjects/Observer%20practice/src/observer/practice/ObserverPractice.java</file>
-            <file>file:/C:/Users/Student/Documents/NetBeansProjects/Observer%20practice/src/Newspaper.java</file>
-            <file>file:/C:/Users/Student/Documents/NetBeansProjects/Observer%20practice/src/Observerable.java</file>
-            <file>file:/C:/Users/Student/Documents/NetBeansProjects/Observer%20practice/src/Observable.java</file>
+            <file>file:/C:/Users/dsmale/Documents/Java-and-OOP-practise-work/Observer%20practice/src/observer/practice/Newspaper.java</file>
+            <file>file:/C:/Users/dsmale/Documents/Java-and-OOP-practise-work/Observer%20practice/src/observer/practice/Reporter.java</file>
+            <file>file:/C:/Users/dsmale/Documents/Java-and-OOP-practise-work/Observer%20practice/src/observer/practice/ObserverPractice.java</file>
         </group>
     </open-files>
 </project-private>
